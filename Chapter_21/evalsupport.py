@@ -17,7 +17,7 @@ class MetaAleph(type):
     def __init__(cls, name, bases, dic):
         print('<[500]> MetaAleph.__init__')
 
-        def inner_2(cls):
+        def inner_2(self):
             print('<[600]> MetaAleph.__init__:inner_2')
 
         cls.method_z = inner_2
